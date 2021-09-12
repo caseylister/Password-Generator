@@ -18,6 +18,18 @@ var special = ["~", "!", "#", "$", "%","&", "+", "*", "?", ":", ";", ">", "<","^
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+function generatePassword(){
+confirmLength = prompt("How many characters would you like your password to be? Please choose between 8 and 128.");
+
+  while(confirmLength < 8 || confirmLength > 128){
+    alert("Password must be between 8 and 128 characters. Try again!");
+    var confirmLength = prompt("How many characters would you like your password to be? Please choose between 8 and 128.");
+  }
+
+    alert("Your password will have " + confirmLength + " characters.");
+
+}    
+
 // Write password to the #password input
 function writePassword(){
   var password = generatePassword();
