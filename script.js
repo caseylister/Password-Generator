@@ -28,6 +28,18 @@ confirmLength = prompt("How many characters would you like your password to be? 
 
     alert("Your password will have " + confirmLength + " characters.");
 
+    var confirmLower = confirm("Would you like to include lowercase characters?");
+    var confirmUpper = confirm("Would you like to include uppercase characters?");
+    var confirmNumber = confirm("Would you like to include numbers?");
+    var confirmSpecial = confirm("Would you like to include any special characters?");
+
+    if(confirmLower === false && confirmUpper === false && confirmNumber === false && confirmSpecial === false){
+      alert("You must choose at least one parameter.");
+      var confirmLower = confirm("Would you like to include lowercase characters?");
+      var confirmUpper = confirm("Would you like to include uppercase characters?");
+      var confirmNumber = confirm("Would you like to include numbers?");
+      var confirmSpecial = confirm("Would you like to include any special characters?");
+    }  
 }    
 
 // Write password to the #password input
