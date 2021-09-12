@@ -23,3 +23,11 @@ GIVEN I need a new, secure password
 ## Mock Up
 
 The following images shows what the final product looks like:
+![Mock Up Image](./images/mockup.png)
+
+![Final Product](./images/final.png)
+
+
+## Link
+
+https://caseylister.github.io/Password-Generator/
