@@ -58,7 +58,19 @@ confirmLength = prompt("How many characters would you like your password to be? 
     if(confirmSpecial){
       passwordChar = passwordChar.concat(special);
     }
-}    
+
+    
+    var randomPw = "";
+
+    for(var i = 0; i < confirmLength; i++){
+      randomPw = randomPw + passwordChar[Math.floor(Math.random() * passwordChar.length)];
+      console.log(randomPw);
+    }
+    return randomPw;
+}
+
+
+
 
 // Write password to the #password input
 function writePassword(){
