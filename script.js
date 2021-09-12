@@ -40,6 +40,24 @@ confirmLength = prompt("How many characters would you like your password to be? 
       var confirmNumber = confirm("Would you like to include numbers?");
       var confirmSpecial = confirm("Would you like to include any special characters?");
     }  
+
+    var passwordChar = [];
+
+    if(confirmLower){
+      passwordChar = passwordChar.concat(lower);
+    }
+
+    if(confirmUpper){
+      passwordChar = passwordChar.concat(upper);
+    }
+
+    if(confirmNumber){
+      passwordChar = passwordChar.concat(number);
+    }
+
+    if(confirmSpecial){
+      passwordChar = passwordChar.concat(special);
+    }
 }    
 
 // Write password to the #password input
